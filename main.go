@@ -2,7 +2,7 @@ package main
 
 import (
     "fmt"
-    "integration"
+    integration "finite-difference"
 )
 
 func main() {
