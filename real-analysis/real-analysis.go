@@ -1,4 +1,4 @@
-package real-analysis
+package real_analysis
 
 import "math"
 

@@ -1,4 +1,4 @@
-package linear-algebra
+package linear_algebra
 
 import (
     "errors"

@@ -1,4 +1,4 @@
-package finite-difference
+package finite_difference
 
 // TrapezoidalRule calculates the area under the curve using the trapezoidal rule.
 // It takes slices of x and y values representing discrete data points and returns the calculated area.

@@ -3,18 +3,18 @@ package combinatorics
 import "errors"
 
 // Factorial calculates the factorial of n.
-func Factorial(n int) (int, error) {
+func Factorial(n int) (int) {
     if n < 0 {
-        return 0, errors.New("factorial is not defined for negative numbers")
+        return 1
     }
     if n == 0 {
-        return 1, nil
+        return 1
     }
     result := 1
     for i := 1; i <= n; i++ {
         result *= i
     }
-    return result, nil
+    return result
 }
 
 // Permutation calculates the number of permutations of k elements taken from a set of n elements.
@@ -43,8 +43,8 @@ func Combination(n, k int) (int, error) {
     if k > n-k {
         k = n - k
     }
-    numerator, _ := Factorial(n)
-    denominator, _ := Factorial(k)
+    numerator := Factorial(n)
+    denominator := Factorial(k)
     denominator *= Factorial(n - k)
     return numerator / denominator, nil
 }
